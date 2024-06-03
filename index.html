@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Daniel's Phonebook</title>
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="phone-container">
+        <h1>Phone Book App</h1>
+        <div class="entry">
+          <input required="" type="text" class="input" id="name">
+          <span class="bar"></span>
+          <label class="label">
+            <span class="label-char" style="--index: 0">N</span>
+            <span class="label-char" style="--index: 1">a</span>
+            <span class="label-char" style="--index: 2">m</span>
+            <span class="label-char" style="--index: 3">e</span>
+          </label>
+        </div>
+
+        <div class="entry">
+          <input required="" type="" class="input" id="phone">
+          <span class="bar"></span>
+          <label class="label">
+            <span class="label-char" style="--index: 0">P</span>
+            <span class="label-char" style="--index: 1">h</span>
+            <span class="label-char" style="--index: 2">o</span>
+            <span class="label-char" style="--index: 3">n</span>
+            <span class="label-char" style="--index: 4">e</span>
+    
+          </label>
+        </div>
+        
+
+           
+      <div class="entry">
+        <input required="" type="email" class="input" id="email">
+        <span class="bar"></span>
+        <label class="label">
+          <span class="label-char" style="--index: 0">E</span>
+          <span class="label-char" style="--index: 1">m</span>
+          <span class="label-char" style="--index: 2">a</span>
+          <span class="label-char" style="--index: 3">i</span>
+          <span class="label-char" style="--index: 4">l</span>
+        </label>
+      </div>
+      <button onclick="addEntry()" class="btn">Add Entry</button>
+     
+      </div>
+     
+     <div class="entries">
+      <h2>Phone Book Entries</h2>
+      <ul id="phoneBook"></ul>
+     </div>
+  
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
