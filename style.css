@@ -1,109 +1,87 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.container{
-  display: grid;
-  /* flex-direction: column; */
-  justify-content: center;
-  grid-template-columns: auto auto;
-  gap: 20%;
-  align-items: center;
-  padding: 5%;
+.container {
+  background-color: #111111;
+  padding: 40px;
+  max-width: 25%;
+  position: relative;
+  top: 20px;
+  margin: auto;
+  border-radius: 8px;
 }
-.phone-container{
-  padding: 30px;
+.phone-container {
+  text-align: center;
 }
-.phone-container h1{
-  margin-bottom: 20px;
+.profile {
+  background-color: #5264ae;
+  height: 80px;
+  padding: 40px;
+  width: 80px;
+  border-radius: 100%;
+  margin-top: -30px;
+  /* position: relative; */
+  margin: auto;
 }
-.btn{
-  width: 415px;
-  padding: 20px;
-  margin-top: 20px;
+#camera {
+  margin: auto;
+  position: relative;
+  bottom: 15px;
+  right: 15px;
+  color: #fff;
+  font-size: 30px;
+}
+.users {
+  /* background-color: green; */
+  position: relative;
+  top: 37px;
+  right: 155px;
+  z-index: 8;
+  padding-left: 20px;
+}
+
+.input {
+  padding: 24px;
+  width: 310px;
+  position: relative;
+  right: 30px;
+  border-radius: 25px;
+  border: none;
+  height: 20px;
+}
+
+.btn {
+  width: 95px;
+  padding: 10px;
+  margin-top: 10px;
   border-radius: 15px;
   border: none;
-  background-color: #5264AE;
+  background-color: #5264ae;
+  color: #fff;
 }
-.btn:hover{
+.btn:hover {
   background: transparent;
-  border: 1px solid #5264AE;
+  border: 1px solid #5264ae;
   color: #515151;
 }
 .entry {
-    position: relative;
-    padding: 10px;
-  }
-  
-  .entry .input {
-    font-size: 16px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 400px;
-    border: none;
-    border-bottom: 1px solid #515151;
-    background: transparent;
-  }
-  
-  .entry .input:focus {
-    outline: none;
-  }
-  
-  .entry .label {
-    color: #999;
-    font-size: 18px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 10px;
-    display: flex;
-  }
-  
-  .entry .label-char {
-    transition: 0.2s ease all;
-    transition-delay: calc(var(--index) * .05s);
-  }
-  
-  .entry .input:focus ~ label .label-char,
-  .entry .input:valid ~ label .label-char {
-    transform: translateY(-20px);
-    font-size: 14px;
-    color: #5264AE;
-  }
-  
-  .entry .bar {
-    position: relative;
-    display: block;
-    width: 400px;
-  }
-  
-  .entry .bar:before,.entry .bar:after {
-    content: '';
-    height: 2px;
-    width: 0;
-    bottom: 1px;
-    position: absolute;
-    background: #5264AE;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-  }
-  
-  .entry .bar:before {
-    left: 50%;
-  }
-  
-  .entry .bar:after {
-    right: 50%;
-  }
-  
-  .entry .input:focus ~ .bar:before,
-  .entry .input:focus ~ .bar:after {
-    width: 50%;
-  }
-  
-  
+  padding: 5px;
+  margin-top: 20px;
+}
+.entries {
+  padding: 20px;
+}
+.entries h2{
+  color: #fff;
+}
+
+#phoneBook {
+  background-color: #fff;
+  max-width: 180%;
+  font-size: 12px;
+  padding: 10px;
+}
